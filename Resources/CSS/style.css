@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/* General Styling */
+html {
+	font-family: helvetica;
+	font-size: 18px;
+}
+
+.content {
+	max-width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+/* Header Styling */
+.header {
+	background-color: black;
+}
+
+#logo {
+	display: flex;
+	align-items: center;
+}
+
+.header img {
+	height: 1.5rem;
+	padding: 0 .5rem;
+}
+
+.header h1 {
+	font-size: 1rem;
+	color: white;
+	padding: .66rem .5rem;
+}
+
+/* Banner Styling */
+.banner {
+	background-image: url(../images/moto.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 25rem;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.headline {
+	max-width: 20rem;
+	padding: 2rem 3rem;
+	margin-right: 27rem;
+	background-color: black;
+	
+}
+
+.headline h3 {
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+}
+
+.headline h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+}
+
+/* Menu Styling */
+
+.nav {
+	background-color: firebrick;
+	color: white;
+}
+
+.nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav li {
+	padding: .75rem 0px;
+}
+
+/* Products Styling */
+.product {
+	width: 30%;
+}
+
+.product-image {
+	border: 4px solid black;
+	display: flex;
+	align-content: center;
+}
+
+.product-image img{
+	height: 9rem;
+	margin: 2rem auto;
+	max-width: 100%;
+}
+
+.product p {
+	background-color: black;
+	color: white;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	text-align: center;
+}
+
+.desktop-products {
+	display: flex;
+	margin: 3rem 0;
+	justify-content: space-between;
+}
+
+/* Business Info */
+#info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4rem;
+}
+
+.business-info {
+	width: 35%;
+}
+
+.business-info h4 {
+	background-color: black;
+	color: white;
+	padding-left: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+	background-color: black;
+	color: white;
+	height: 5rem;
+}
+
+footer {
+	padding-top: 2rem;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 1024px){
+	.mobile-nav {
+		display: none;
+	}
+	
+	.mobile-products {
+		display: none;
+	}
+	
+	.smallest-products {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1024px){
+/* Menu Styling */
+	.nav ul {
+		display: none;
+	}
+	
+	.mobile-nav {
+		background-color: firebrick;
+		color: white;
+		display: flex;
+		align-items: center;
+	}
+	
+	.mobile-nav p {
+		padding: .75rem 0px;
+	}
+	
+/* Products Styling */
+	.product {
+		width: 47%;
+	}
+	
+	.desktop-products {
+		display: none;
+	}
+	
+	.mobile-products {
+		display: flex;
+		margin: 3rem 0;
+		justify-content: space-between;
+	}
+	
+	.smallest-products {
+		display: none;
+	}
+	
+/* Business Info */
+	.business-info {
+		width: 35%;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+/* Banner Styling */
+	.banner {
+	height: 15rem;
+}
+	
+	.headline {
+	width: 100%;
+	padding: 1rem 2rem;	
+	margin-top: 10rem;
+}
+
+	.headline h3 {
+	font-size: .77rem;
+}
+
+	.headline h2 {
+	font-size: 1rem;
+}
+	
+/* Products Styling */
+	
+	.mobile-products {
+		display: none;
+	}
+
+	.smallest-products {
+		display: flex;
+		justify-content: center;
+		margin: 3rem auto;
+	}
+	
+	.product {
+		width: 90%;
+	}
+/* Business Info */
+#info {
+	flex-direction: column;
+	align-items: center;
+}
+
+.business-info {
+	width: 90%;
+	margin-bottom: .5rem;
+}
+/* Footer */
+	footer {
+		text-align: center;
+	}
+
+}
+
